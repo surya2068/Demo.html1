@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Surya — Portfolio</title>
+
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", Arial, sans-serif;
+      background: #202d53;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #5f6cff, #9aa5ff);
+      padding: 3rem 1rem;
+      text-align: center;
+      color: white;
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+    }
+
+    header img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 4px solid white;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p.subtitle {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    /* Social buttons */
+    .social-links {
+      margin-top: 1.5rem;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .social-links a {
+      background: rgb(39, 25, 25);
+      color: #5f6cff;
+      padding: 0.5rem 1rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.2s;
+    }
+
+    .social-links a:hover {
+      background: #dfe3ff;
+    }
+
+    /* Main Section */
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+
+    .card {
+      background: rgb(250, 249, 249);
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      color: #5f6cff;
+      margin-bottom: 1rem;
+    }
+
+    .skills {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+    }
+
+    .skills li {
+      background: #5f6cff;
+      color: white;
+      padding: 0.4rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+
+    ul.list {
+      padding-left: 1.2rem;
+    }
+
+    /* Footer */
+    footer {
+      background: #5f6cff;
+      color: rgb(25, 19, 19);
+      padding: 1rem;
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://midriffinfosolution.org/wp-content/uploads/2022/03/web-development.jpg" alt="Surya Profile Photo" />
+
+    <h1>Hi, I'm Surya</h1>
+    <p class="subtitle">Front-End Developer • UI Engineer</p>
+
+    <div class="social-links">
+      <a href="#">LinkedIn</a>
+      <a href="#">GitHub</a>
+      <a href="#">Twitter</a>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="card">
+      <h2>About Me</h2>
+      <p>
+        I'm a passionate front-end developer who loves to create visually appealing,
+        responsive, and user-friendly web experiences. I work with modern JavaScript,
+        CSS, and UI frameworks to make clean digital interfaces.
+      </p>
+
+      <h3 style="margin-top: 1rem;">Skills</h3>
+      <ul class="skills">
+        <li>HTML</li>
+        <li>  Responsive CSS Grid/Flex</li>
+        <li>JavaScript</li>
+        <li>SCSS</li>
+        <li>Accessibility</li>
+        <li>Animations</li>
+        <li>Performance Optimization</li>
+      </ul>
+    </section>
+
+    <section class="grid">
+
+      <div class="card">
+        <h2>Highlights</h2>
+        <ul class="list">
+          <li>Responsive UI development for multiple projects</li>
+          <li>Improved website performance and animations</li>
+          <li>Experience with design systems & reusable components</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Contact Info</h2>
+        <p>Email: <strong>surya08@gmail.com</strong></p>
+        <p>Location: Vijayawada, India</p>
+        <p>Open To: Front-end roles, UI engineering, design systems</p>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    © <span id="year"></span> Surya — All Rights Reserved
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
+
